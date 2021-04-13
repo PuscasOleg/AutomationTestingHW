@@ -1,17 +1,14 @@
 package parsing;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.FileReader;
-import java.io.IOException;
 
 import au.com.bytecode.opencsv.CSVReader;
 
+import java.io.FileReader;
+import java.io.IOException;
+
 public class OpenCSVExample {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         CSVReader reader = null;
-        try
-        {
+        try {
             //Get the CSVReader instance with specifying the delimiter to be used
             reader = new CSVReader(new FileReader("Lab_2/src/main/input.csv"), ',');
 
@@ -22,7 +19,7 @@ public class OpenCSVExample {
             {
                 for(String token : nextLine)
                 {
-                    //Print all tokens
+                    //Print   all  tokens
                     System.out.println(token);
                 }
             }
